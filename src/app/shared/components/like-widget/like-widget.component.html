@@ -1,0 +1,11 @@
+<div
+  class="like-widget-container"
+  (click)="like()"
+  style="cursor: pointer"
+  (keyup.enter)="like()"
+>
+  <fa-icon [icon]="fonts.faThumbsUp" tabindex="0" size="1x"> </fa-icon>
+  <span class="like-counter">
+    {{ likes }}
+  </span>
+</div>
