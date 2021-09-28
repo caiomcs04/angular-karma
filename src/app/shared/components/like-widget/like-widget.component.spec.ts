@@ -1,7 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { UniqueIdService } from '../../services/unique-id/unique-id.service';
-
 import { LikeWidgetComponent } from './like-widget.component';
 import { LikeWidgetModule } from './like-widget.module';
 
@@ -22,7 +19,7 @@ describe(LikeWidgetComponent.name, () => {
     expect(component).toBeTruthy();
   });
 
-  it('Should auto generate ID when id input prop is missing', () => {
+  it('Should auto-generate ID during ngOnInit when (@Input id) is not assigned', () => {
     //por padrao nao é detectado mudança de estado pelo angular
     //para detectar mudanças devemos utilizar o detectChanges do fixture
     //ele é responsavel por disparar o ngOnInit
@@ -33,11 +30,21 @@ describe(LikeWidgetComponent.name, () => {
     expect(component.id).toBeTruthy();
   })
 
-  it('Should auto generate ID when id input prop is present', () => {
+  it('Should NOT auto-generate ID during ngOnInit when (@Input id) is assigned', () => {
     const someId = 'someId';
     component.id = someId
     fixture.detectChanges();
 
     expect(component.id).toBeTruthy();
+  })
+
+  it(`#${LikeWidgetComponent.prototype.like.name} should trigger (@Output liked) when called`, () => {
+
+    //spy on espiona o metodo de certo objeto para avisar
+    //ao jasmine quando o metodo é chamado
+    spyOn(component.liked, 'emit')
+    fixture.detectChanges();
+    component.like();
+    expect(component.liked.emit).toHaveBeenCalled();
   })
 });

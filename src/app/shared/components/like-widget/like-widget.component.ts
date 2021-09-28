@@ -11,7 +11,7 @@ export class LikeWidgetComponent implements OnInit {
 
   @Output() public liked = new EventEmitter<void>()
   @Input() public likes = 0
-  @Input() public id = null
+  @Input() public id: any = null
 
   public fonts = { faThumbsUp }
 
