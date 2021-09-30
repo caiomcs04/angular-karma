@@ -1,5 +1,5 @@
 
-##Introduction to Angular Testing
+## Introduction to Angular Testing
 
 >This project is to practice good testing practices in Angular. It covered the basics of Karma structure, settings and test coverage
 
