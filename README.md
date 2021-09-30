@@ -1,27 +1,45 @@
-# NgTest1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+#Introduction to Angular Testing
 
-## Development server
+>This project is to practice good testing practices in Angular. It covered the basics of Karma structure, settings and test coverage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Prerequisites
 
-## Code scaffolding
+> - **Node** with version greater than or equal to 10.21 - [Node Donwload](https://nodejs.org/pt-br/download/)
+> - **NPM**  with version greater than or equal to 6.14 - [Npm Donwload](https://www.npmjs.com/package/download)
+> - **Angular** with version greater than or equal to 12.0.3 - **npm install -g @angular/cli**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+> Clone this project in your machine with the command:
+> ```
+> 	git clone https://github.com/caiomcs04/santanderBoot.git
+> ```
+>Access your terminal project folder:
+> ```
+> 	cd [Your Project folder name]
+> ```
+> Than access the **frontendSantander** folder:
+> ```
+> 	cd [frontendSantander]
+> ```
+> Already the application's folder in your terminal, type the following command to install the node-modules:
+> ```
+> 	npm install
+> ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Execution
 
-## Running unit tests
+>  When the installation is ready, start the front-end application with the command::
+> ```
+> 	ng server --o
+> ```
+>The application will be available for viewing in your browser, if this does not happen automatically open the browser at the following address: _localhost: 4200_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Functionalities
 
-## Running end-to-end tests
+> This application aims to show data consumed from a database in a customer-friendly way
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Authors
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> - **Caio Moreira de Carvalho Sampaio** - [Linkedin](https://www.linkedin.com/in/caio-sampaio-b02a3669/) | [Email](caio6c@yahoo.com.br)
