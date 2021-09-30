@@ -13,15 +13,11 @@
 
 > Clone this project in your machine with the command:
 > ```
-> 	git clone https://github.com/caiomcs04/santanderBoot.git
+> 	git clone https://github.com/caiomcs04/angular-karma.git
 > ```
 >Access your terminal project folder:
 > ```
 > 	cd [Your Project folder name]
-> ```
-> Than access the **frontendSantander** folder:
-> ```
-> 	cd [frontendSantander]
 > ```
 > Already the application's folder in your terminal, type the following command to install the node-modules:
 > ```
@@ -30,15 +26,23 @@
 
 ## Execution
 
->  When the installation is ready, start the front-end application with the command::
+>  When the installation is ready, start the front-end application with the command:
 > ```
 > 	ng server --o
 > ```
 >The application will be available for viewing in your browser, if this does not happen automatically open the browser at the following address: _localhost: 4200_
-
+>
+> To run tests use the command:
+> ```
+> 	ng test
+> ```
+> To test coverage use the command:
+> ```
+> 	ng test-coverage
+> ```
 ## Functionalities
 
-> This application aims to show data consumed from a database in a customer-friendly way
+> This application aims to practice Angular test using Karma
 
 ## Authors
 
